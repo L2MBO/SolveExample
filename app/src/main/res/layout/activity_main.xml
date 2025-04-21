@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/exampleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        android:text="0 + 0 = 0"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exampleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:hint="Ответ"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/startButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Старт"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/checkButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:text="Проверка"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/statsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkButton"
+        android:layout_marginTop="29dp"
+        android:text="Правильно: 0, Не правильно: 0, результат: 0.00%"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/totalAnswerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statsTextView"
+        android:layout_alignStart="@+id/statsTextView"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="17dp"
+        android:rotationX="360"
+        android:text="И того решено примеров: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
